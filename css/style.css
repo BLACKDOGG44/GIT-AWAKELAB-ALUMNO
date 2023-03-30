@@ -1,0 +1,153 @@
+body{
+    background-color:  #080808;
+}
+.head h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+    text-align: center;  
+    color:#00fff2;
+    
+}
+.head h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    text-align: center;  
+    color:#00fff2;
+    
+}
+.menu{
+   background-color:#00fff2;
+   padding: 15px 20px;
+   border-radius: 8px;
+   
+}
+
+.menu a{
+    /*background-color:#00fff2;*/
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color:#9e9e9e;
+    padding-left: 35px;
+
+}
+.menu a:hover{
+    color: aliceblue;
+}
+/*.container{
+   
+    border-radius: 8px;
+    border: 2px solid #00fff2;
+}*/
+.info {
+    border: 2px solid #00fff2;
+    text-align: justify;
+    margin : 15px 20px;
+    padding: 20px 10px;
+   /* width: 500px;*/
+}
+.info1 button {
+    *border: 2px solid #00fff2;
+    text-align: justify;
+    margin : 20px 15px;
+    padding: 5px 1px;
+   /* width: 500px;*/
+}
+.info label {
+    color: #00fff2;
+    /*border: 2px solid #00fff2;*/
+    text-align: justify;
+    margin : 5px 10px;
+    padding: 7px 2px;
+   /* width: 500px;*/
+}
+.info input {
+    /*color: #00fff2;*/
+    /*border: 2px solid #00fff2;*/
+    text-align: justify;
+    margin : 10px 20px;
+    padding: 5px 1px;
+   /* width: 500px;*/
+}
+.info h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 5px 10px;
+    color:  #00fff2;
+}
+.info p{
+    size: 25px;
+    color: aliceblue;
+}
+.galery {
+    border: 1px solid  #00fff2; 
+    text-align: justify;
+    margin : 15px 20px ;
+    padding: 20px 10px;
+}
+.galery h4 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 5px 10px;
+    color: #00fff2
+}
+.galery div{
+    border: 1px solid #2B2B2B; 
+    border-radius: 4px;
+    margin :10px;
+    padding: 15px;
+
+}
+.foot{
+    background-color: #00fff2;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+.foot div{
+    text-align: center;
+
+}
+.foot a h5 i{
+    size: 25px;
+    margin-left: 2px;
+}
+/*para smarthphone*/
+@media screen and (max-width: 767px) and (min-width: 280px){
+    .galery{
+        background-color: #d7fc00;
+    }
+    .galery .img{
+        width: 90%;
+        
+    }
+   
+    .head{
+        background-color: #000000;
+    }
+    .head h3{
+        color: #d7fc00;
+    }
+    .menu{
+        background-color: #d7fc00;
+    }
+    
+}
+/*para table*/
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    
+    .galery .img{
+        width: 90%;
+    }
+}
+/*para desktop y más*/
+@media screen and (min-width: 1024px) and (min-width: 768px){
+    .galery .img{
+        width: 90%;
+    }
+
+}
