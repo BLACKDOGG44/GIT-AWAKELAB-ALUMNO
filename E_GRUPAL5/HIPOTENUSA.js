@@ -1,10 +1,11 @@
 function calcularHipotenusa(cateto1, cateto2) {
     var hipotenusa = Math.sqrt(cateto1 * cateto1 + cateto2 * cateto2);
-    return hipotenusa.toFixed(2); // Redondeamos el resultado a dos decimales
+    return hipotenusa.toFixed(2);
   }
   
-  // Ejemplo de uso
-  var cateto1 = 3; // en unidades de medida
-  var cateto2 = 4; // en unidades de medida
+  var cateto1 = parseFloat(prompt("Ingresa el valor del primer cateto:"));
+  var cateto2 = parseFloat(prompt("Ingresa el valor del segundo cateto:"));
+  
   var hipotenusa = calcularHipotenusa(cateto1, cateto2);
-  console.log("La hipotenusa es: " + hipotenusa); 
+  
+  alert("El valor de la hipotenusa es: " + hipotenusa);
