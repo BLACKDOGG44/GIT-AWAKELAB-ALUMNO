@@ -1,11 +1,12 @@
-function calcularIVA(montoCompra, porcentajeIVA) {
-    var iva = montoCompra * porcentajeIVA / 100;
-    return iva.toFixed(2); // Redondeamos el resultado a dos decimales
+ function calcularIVA(precio,porcentaje) {
+    var iva = precio *porcentaje  / 100;
+     var porcentaje = 0.19
+    return iva.toFixed(2);
   }
   
-  // Ejemplo de uso
-  var montoCompra = 1000; // en pesos
-  var porcentajeIVA = 16; // en porcentaje
-  var iva = calcularIVA(montoCompra, porcentajeIVA);
-  console.log("El IVA es: $" + iva);
+  var precio = parseFloat(prompt("Ingresa el precio del producto:"));
+  var porcentaje = parseFloat(prompt("Ingresa el porcentaje  de IVA):"));
   
+  var iva = calcularIVA(precio);
+  
+  alert("El IVA correspondiente es: $");
