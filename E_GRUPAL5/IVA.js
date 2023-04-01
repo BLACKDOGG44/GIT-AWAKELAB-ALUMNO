@@ -1,12 +1,9 @@
- function calcularIVA(precio,porcentaje) {
-    var iva = precio *porcentaje  / 100;
-     var porcentaje = 0.19
-    return iva.toFixed(2);
-  }
-  
-  var precio = parseFloat(prompt("Ingresa el precio del producto:"));
-  var porcentaje = parseFloat(prompt("Ingresa el porcentaje  de IVA):"));
-  
-  var iva = calcularIVA(precio);
-  
-  alert("El IVA correspondiente es: $");
+const precio = 100; // Este es el precio al que se le calculará el IVA
+const porcentajeIVA = 0.19; // Este es el porcentaje del IVA
+
+const valorIVA = precio * porcentajeIVA; // Calculamos el valor del IVA
+const precioConIVA = precio + valorIVA; // Calculamos el precio con el IVA incluido
+
+console.log(`El precio sin IVA es: ${precio}$`);
+console.log(`El valor del IVA es: ${valorIVA}$`);
+console.log(`El precio con IVA es: ${precioConIVA}$`);
