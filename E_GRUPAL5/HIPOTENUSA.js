@@ -1,11 +1,20 @@
+var cateto1 = 10;
+var cateto2 = 7;
+var hipotenusa = calcularHipotenusa(cateto1, cateto2);
+
 function calcularHipotenusa(cateto1, cateto2) {
-    var hipotenusa = Math.sqrt(cateto1 * cateto1 + cateto2 * cateto2);
-    return hipotenusa.toFixed(2);
-  }
-  
-  var cateto1 = parseFloat(prompt("Ingresa el valor del primer cateto:"));
-  var cateto2 = parseFloat(prompt("Ingresa el valor del segundo cateto:"));
-  
-  var hipotenusa = calcularHipotenusa(cateto1, cateto2);
-  
-  alert("El valor de la hipotenusa es: " + hipotenusa);
+  // Elevar al cuadrado cada cateto
+  var cateto1AlCuadrado = Math.pow(cateto1, 2);
+  var cateto2AlCuadrado = Math.pow(cateto2, 2);
+
+  // Sumar los cuadrados de los catetos
+  var sumaCuadradosCatetos = cateto1AlCuadrado + cateto2AlCuadrado;
+
+  // Calcular la raíz cuadrada de la suma de los cuadrados de los catetos
+  var hipotenusa = Math.sqrt(sumaCuadradosCatetos);
+
+  // Devolver la hipotenusa
+  return hipotenusa;
+}
+
+console.log ("La hipotenusa es: " + hipotenusa);
