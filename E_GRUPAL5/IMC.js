@@ -1,12 +1,20 @@
 // CÓMO CALCULAR EL IMC (INDICE DE MASA CORPORAL
+var peso = 105; // en kilogramos
+var altura = 180; // en centímetros
+var imc = calcularIMC(peso, altura);
+
 function calcularIMC(peso, altura) {
+
+    // Convertir la altura a metros
+    altura = altura / 100;
+  
+    // Calcular el índice de masa corporal
     var imc = peso / (altura * altura);
-    return imc.toFixed(2);
+  
+    // Redondear a dos decimales
+    imc = imc.toFixed(2);
+  
+    // Devolver el resultado
+    return imc;
   }
-  
-  var peso = parseFloat(prompt("Ingresa tu peso en kilogramos:"));
-  var altura = parseFloat(prompt("Ingresa tu altura en metros:"));
-  
-  var imc = calcularIMC(peso, altura);
-  
-  alert("Tu índice de masa corporal es: " + imc);
+console.log("Tu índice de masa corporal es: " + imc);
