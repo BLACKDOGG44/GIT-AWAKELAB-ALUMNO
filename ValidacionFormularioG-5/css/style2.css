@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, #D9AFD9 0%, #B5FFFC 100%);
+    background-repeat: no-repeat;
+}
